@@ -5,6 +5,12 @@ import CourseRoutes from "./Kanbas/Courses/routes.js";
 import ModuleRoutes from "./Kanbas/Modules/routes.js";
 import AssignmentRoutes from './Kanbas/Assignments/routes.js';
 import cors from "cors";
+import mongoose from "mongoose";
+import "dotenv/config";
+import UserRoutes from './Kanbas/User/routes.js';
+
+const CONNECTION_STRING = process.env.MONGO_CONNECTION_STRING || "mongodb://127.0.0.1:27017/kanbas"
+mongoose.connect(CONNECTION_STRING);
 const app = express()
 app.use(cors());
 app.use(express.json()); // do all your work after this line
@@ -13,4 +19,6 @@ ModuleRoutes(app);
 AssignmentRoutes(app);
 Lab5(app);
 Hello(app);
+UserRoutes(app);
+
 app.listen(process.env.PORT || 4000);
