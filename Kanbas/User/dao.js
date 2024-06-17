@@ -10,3 +10,9 @@ export const findUserByUsername = (username) =>  model.findOne({ username: usern
 export const findUserByCredentials = (username, password) =>  model.findOne({ username, password });
 export const updateUser = (userId, user) =>  model.updateOne({ _id: userId }, { $set: user });
 export const deleteUser = (userId) => model.deleteOne({ _id: userId });
+export const findUsersByPartialName = (partialName) => {
+  const regex = new RegExp(partialName, "i"); // 'i' makes it case-insensitive
+  return model.find({
+    $or: [{ firstName: { $regex: regex } }, { lastName: { $regex: regex } }],
+  });
+};
