@@ -21,7 +21,6 @@ export const findModulesByCourse = async (courseId) => {
   }
 };
 
-
 export const updateModule = async (moduleId, moduleData) => {
   return await Module.findByIdAndUpdate(moduleId, moduleData, { new: true });
 };
