@@ -11,7 +11,7 @@ import UserRoutes from './Kanbas/User/routes.js';
 import session from "express-session";
 import "dotenv/config";
 
-const CONNECTION_STRING = process.env.MONGO_CONNECTION_STRING || "mongodb://127.0.0.1:27017/kanbas"
+const CONNECTION_STRING = process.env.MONGO_CONNECTION_STRING || "mongodb+srv://awwdestiny1:75JNgw86u3beWqJ5@kanbas.gwwlfjy.mongodb.net/kanbas"
 mongoose.connect(CONNECTION_STRING);
 const app = express()
 app.use(cors({

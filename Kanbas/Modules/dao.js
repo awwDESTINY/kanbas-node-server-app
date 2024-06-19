@@ -25,6 +25,4 @@ export const updateModule = async (moduleId, moduleData) => {
   return await Module.findByIdAndUpdate(moduleId, moduleData, { new: true });
 };
 
-export const deleteModule = async (moduleId) => {
-  return await Module.findByIdAndDelete(moduleId);
-};
+export const deleteModule = (moduleId) => Module.deleteOne({ _id: moduleId });

@@ -5,7 +5,7 @@ const userSchema = new mongoose.Schema({
     firstName: String,
     email: String,
     lastName: String,
-    dob: String,
+    dob: Date,
     role: {
       type: String,
       enum: ["STUDENT", "FACULTY", "ADMIN", "USER"],
