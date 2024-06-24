@@ -8,8 +8,11 @@ const courseSchema = new mongoose.Schema({
   department: String,
   credits: Number,
   description: String,
-  Image: String,
+  image: String,
+  faculty: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
+  students: [{ type: mongoose.Schema.Types.ObjectId, ref: 'User' }]
 }, {
   collection: "courses"
 });
+
 export default courseSchema;

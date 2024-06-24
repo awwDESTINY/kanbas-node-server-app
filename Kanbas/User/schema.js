@@ -11,10 +11,6 @@ const userSchema = new mongoose.Schema({
       enum: ["STUDENT", "FACULTY", "ADMIN", "USER"],
       default: "USER",
     },
-    loginId: String,
-    section: String,
-    lastActivity: Date,
-    totalActivity: String,
   },
   { collection: "users" }
 );

@@ -4,6 +4,7 @@ import Lab5 from "./Lab5/index.js";
 import CourseRoutes from "./Kanbas/Courses/routes.js";
 import ModuleRoutes from "./Kanbas/Modules/routes.js";
 import AssignmentRoutes from './Kanbas/Assignments/routes.js';
+import QuizRoutes from './Kanbas/Quizzes/routes.js';
 import cors from "cors";
 import mongoose from "mongoose";
 import "dotenv/config";
@@ -37,6 +38,7 @@ app.use(express.json()); // do all your work after this line
 CourseRoutes(app);
 ModuleRoutes(app);
 AssignmentRoutes(app);
+QuizRoutes(app)
 Lab5(app);
 Hello(app);
 UserRoutes(app);

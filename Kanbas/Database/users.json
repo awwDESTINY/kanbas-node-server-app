@@ -39,19 +39,6 @@
     "totalActivity": "23:32:43"
   },
   {
-    "username": "black_widow",
-    "password": "romanoff123",
-    "firstName": "Natasha",
-    "lastName": "Romanoff",
-    "email": "natasha@avengers.com",
-    "dob": "1984-11-22",
-    "role": "TA",
-    "loginId": "001234564S",
-    "section": "S101",
-    "lastActivity": "2020-11-05",
-    "totalActivity": "13:23:34"
-  },
-  {
     "username": "thor_odinson",
     "password": "mjolnir123",
     "firstName": "Thor",
@@ -91,19 +78,6 @@
     "totalActivity": "44:33:22"
   },
   {
-    "username": "strider",
-    "password": "aragorn123",
-    "firstName": "Aragorn",
-    "lastName": "Elessar",
-    "email": "aragorn@gondor.com",
-    "dob": "2931-03-01",
-    "role": "TA",
-    "loginId": "001234568S",
-    "section": "S101",
-    "lastActivity": "2020-12-04",
-    "totalActivity": "12:23:34"
-  },
-  {
     "username": "elf_archer",
     "password": "legolas123",
     "firstName": "Legolas",
@@ -114,6 +88,30 @@
     "loginId": "001234569S",
     "section": "S101",
     "lastActivity": "2020-11-11",
-    "totalActivity": "21:32:43"
+    "totalActivity": "21:32:43",
+    "quizAttempts": [
+      {
+        "quizId": "66779b2cd278340c5bc77f67",
+        "attemptDate": "2024-06-24",
+        "answers": [
+          {
+            "questionId": "1",
+            "answer": "4",
+            "correct": true
+          },
+          {
+            "questionId": "2",
+            "answer": "false",
+            "correct": true
+          },
+          {
+            "questionId": "3",
+            "answer": "Paris",
+            "correct": true
+          }
+        ],
+        "score": 15
+      }
+    ]
   }
 ]
